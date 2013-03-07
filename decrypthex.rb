@@ -11,6 +11,6 @@ private_key = OpenSSL::PKey::RSA.new private_key_file, 'password'
 
 cryptData = STDIN.read
 
-decrypted = private_key.private_decrypt hex2bin(cryptData)
+decrypted = private_key.private_decrypt hex2bin(cryptData.strip)
 
 puts decrypted
