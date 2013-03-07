@@ -15,6 +15,7 @@ you can check encrypting and decrypting running the script with some input, for 
 
 ```
 echo "test message" | ./crypt.php | ./decrypt.rb
+./java/encrypt.sh test | ./decrypt.rb
 ```
 
 and you should get the plain message back.
